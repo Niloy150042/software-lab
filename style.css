@@ -567,8 +567,7 @@ small device
 .footer-section{
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  
-  
+  margin-top: 30px; 
 }
 
 
@@ -577,4 +576,27 @@ small device
   color: green;
   padding: 3px;
 }
+@media screen and (max-width:500px) {
+  .footer-section{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 30px;
+   
+    text-align: center;
+   
+  }
+  
+}
+@media screen and (min-width:501px) {
+  .footer-section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 30px;
+   
+    text-align: center;
+   
+  }
+  
+}
+
 
