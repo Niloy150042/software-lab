@@ -61,7 +61,8 @@ function addcart() {
   const quantityInputstring = quantityInput.value;
   const quantity = parseInt(quantityInputstring);
 
-  const priceorange = quantity * priceoforange;
+  const priceoranges = quantity * priceoforange;
+  const priceorange= priceoranges.toFixed(2)
   orangeprice.innerText = priceorange;
 
   const organicorange = document.getElementById("Organic-orange");
@@ -80,7 +81,8 @@ function addcart1() {
   const bananaprice = document.getElementById("banana-price");
   const bananapricestring = bananaprice.innerText;
   const priceofbanana = parseFloat(bananapricestring);
-  const pricebanana = priceofbanana * quantity;
+  const pricebananas = priceofbanana * quantity;
+  const pricebanana= pricebananas.toFixed(2)
   bananaprice.innerText = pricebanana;
 
   const newitem1 = document.createElement("div");
@@ -98,7 +100,8 @@ function addcart2() {
   const grapspricestring= grapsprice.innerText;
   const priceofgraps= parseFloat(grapspricestring);
   
-  const pricegraps = priceofgraps * quantity;
+  const pricegrap = priceofgraps * quantity;
+  const pricegraps= pricegrap.toFixed(2)
   grapsprice.innerText = pricegraps;
   
 
@@ -117,7 +120,8 @@ function addcart3() {
   const grapspricestring= grapsprice.innerText;
   const priceofgraps= parseFloat(grapspricestring);
   
-  const pricemilk = priceofgraps * quantity;
+  const pricemilks = priceofgraps * quantity;
+  const pricemilk = pricemilks.toFixed(2)
   grapsprice.innerText = pricemilk;
 
 
@@ -143,7 +147,8 @@ function addcart4() {
   const maltaprice= document.getElementById('malta-price')
   const maltapricestring = maltaprice.innerText;
   const priceofmalta= parseFloat(maltapricestring);
-  const pricemalta = priceofmalta * quantity;
+  const pricemaltas = priceofmalta * quantity;
+  const pricemalta= pricemaltas.toFixed(2)
   maltaprice.innerText = pricemalta;
 
 
@@ -163,7 +168,8 @@ function addcart5() {
   const maltaprice= document.getElementById('tomato-price')
   const maltapricestring = maltaprice.innerText;
   const priceofmalta= parseFloat(maltapricestring);
-  const pricetomato = priceofmalta * quantity;
+  const  pricetomatos = priceofmalta * quantity;
+  const pricetomato = pricetomatos.toFixed(2)
   maltaprice.innerText = pricetomato;
 
 
@@ -236,13 +242,18 @@ function handleclicked(){
 
 
  
-   const total= pricetomato +pricemalta + pricemilk +pricegraps+
+   const total = pricetomato +pricemalta + pricemilk +pricegraps+
      pricebanana +priceorange ;
+    
+    
    
    const totalprice= document.getElementById('totalprices');
    
-   totalprice.innerText=total;
+   totalprice.innerText= total;
+
   
 }
+
+
 
  
