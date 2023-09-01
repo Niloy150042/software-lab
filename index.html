@@ -87,26 +87,7 @@
           <br />
           
 
-
-
-          <button id="myBtn" onclick="startbutton()" type="button" id="button" class="btn btn-success">Get Starts</button>
-          
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content bg-primary-subtle">
-    <i class="fa-regular fa-face-grin-tears fa-2xl text-success"></i>
-    <br>
-   
-    
-    <p>Some text in the Modal..</p>
-    <span class="close">&times;</span>
-  </div>
- 
-
-</div>
+          <button id=""  type="button" class="btn btn-success">Get starts</button>
 
 
           
@@ -266,8 +247,9 @@
 
            </div>
 
-            <p class="text-center">$ 10.30</p>
+            <p  class="text-center">$ <span id="orange-price"> 10.30</span> </p>
             <button onclick="addcart()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
+            
             
              
           </div>
@@ -286,12 +268,12 @@
             </div>
             <div class="quantityInput d-flex text-center g-2">
               <p class="fw-bold p-1">Quantity:</p>
-              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput" value="1">
+              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput1" value="1">
              </div>
              <div id="banana">
 
              </div>
-            <p class="text-center">$ 10.30</p>
+            <p class="text-center">$  <span id="banana-price">10.30</span></p>
          <button onclick="addcart1()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
             
           </div>
@@ -309,12 +291,12 @@
             </div>
             <div class="quantityInput d-flex text-center g-2">
               <p class="fw-bold p-1">Quantity:</p>
-              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput" value="1">
+              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput2" value="1">
              </div>
              <div id="Organic-graps">
 
              </div>
-            <p class="text-center">$ 10.30</p>
+            <p class="text-center">$ <span id="graps-price"> 10.30</span></p>
             <button onclick="addcart2()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
           </div>
         </div>
@@ -331,12 +313,12 @@
             </div>
             <div class="quantityInput d-flex text-center g-2">
               <p class="fw-bold p-1">Quantity:</p>
-              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput" value="1">
+              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput3" value="1">
              </div>
              <div id="Organic-Milk">
 
              </div>
-            <p class="text-center">$ 10.30</p>
+            <p class="text-center">$ <span id="milk-price">10.30</span></p>
             <button onclick="addcart3()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
 
           </div>
@@ -354,12 +336,12 @@
             </div>
             <div class="quantityInput d-flex text-center g-2">
               <p class="fw-bold p-1">Quantity:</p>
-              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput" value="1">
+              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput4" value="1">
              </div>
              <div id="Organic-malta">
 
              </div>
-            <p class="text-center">$ 10.30</p>
+            <p class="text-center">$ <span id="malta-price">10.30</span></p>
             <button onclick="addcart4()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
           </div>
         </div>
@@ -377,12 +359,13 @@
             
             <div class="quantityInput d-flex text-center g-2">
               <p class="fw-bold p-1">Quantity:</p>
-              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput" value="1">
+              <input type="number" class=" fw-bold form-control text-center w-25 h-75 position-relative" id="quantityInput5" value="1">
              </div>
              <div id="Organic-tomato">
 
              </div>
-            <p class="text-center">$ 10.30</p>
+            <p class="text-center">$ <span id="tomato-price">10.30</span>
+            </p>
             <button onclick="addcart5()" class="btn btn-success d-grid col-6 col-md-8 mx-auto mb-3" type="button">Add Cart</button>
           </div>
         </div>
@@ -390,10 +373,27 @@
      </section>
     </main>
 
-    <div class="totalprice">
-      
-      <button class="btn btn-primary  totalpricebutton" type="submit">Totalprice</button>
+    
+   <div  class="d-flex justify-content-center m-3">
+    <button  id="myBtn"  type="button" id="" class="btn btn-success "> <span onclick="handleclicked()">Total price</span></button>
+   </div>
+          
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content bg-primary-subtle d-flex text-center">
+        <i class="fa-regular fa-face-grin-tears fa-2xl text-success"></i>
+        <br>
+       
+        
+       <p> wow! Your order is successful </p>
+        <p> Your Total price is : <span id="totalprices">0</span> $</p>
+        <p>Thanks for stay with us !</p>
+        <span onclick="close()" class="close">&times;</span>
+      </div>
     </div>
+    
     <!-- deal section start -->
     <hr>
 <section class="deal" id="deal">
